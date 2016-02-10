@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "spellId",
+      "type": "Integer"
+    },
+    {
+      "name": "creatureId",
+      "type": "Integer"
+    },
+    {
+      "name": "itemId",
+      "type": "Integer"
+    },
+    {
+      "name": "qualityId",
+      "type": "Integer"
+    },
+    {
+      "name": "icon",
+      "type": "String"
+    },
+    {
+      "name": "isGround",
+      "type": "String"
+    },
+    {
+      "name": "isFlying",
+      "type": "String"
+    },
+    {
+      "name": "isAquatic",
+      "type": "String"
+    },
+    {
+      "name": "isJumping",
+      "type": "String"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.micompaia.wow">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/wow"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Razas"
+            android:label="@string/title_activity_razas"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.micompaia.wow.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Clases"
+            android:label="@string/title_activity_clases"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.micompaia.wow.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Mascotas"
+            android:label="@string/title_activity_mascotas"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.micompaia.wow.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DetallesRaza"
+            android:label="@string/title_activity_detalles_raza"
+            android:parentActivityName=".Razas"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.micompaia.wow.Razas" />
+        </activity>
+
+        <provider
+            android:name="com.micompaia.wow.provider.WowProvider"
+            android:authorities="com.micompaia.wow.provider"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

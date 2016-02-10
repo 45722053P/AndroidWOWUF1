@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WOW</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_razas">Razas</string>
+    <string name="title_activity_galeria">galeria</string>
+    <string name="title_activity_clases">Clases</string>
+    <string name="Intro">En esta aplicación del juego World of Warcraft podremos encontrar:las razas, las clases y mucha mas información.</string>
+    <string name="title_activity_mascotas">Mascotas</string>
+    <string name="title_activity_detalles_raza">DetallesRaza</string>
+    <string name="arranque">Primer Arranque</string>
+</resources>

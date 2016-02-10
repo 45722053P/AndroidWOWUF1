@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "name": "mask",
+      "type": "String"
+    },
+    {
+      "name": "side",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "imagen",
+      "type": "String"
+    }
+  ]
+}

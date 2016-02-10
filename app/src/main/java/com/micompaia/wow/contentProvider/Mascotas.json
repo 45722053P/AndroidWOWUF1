@@ -1,0 +1,25 @@
+{
+  "fields": [
+
+    {
+      "name": "key",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "typeAbilityId",
+      "type": "String"
+    },
+    {
+      "name": "strongAgainstId",
+      "type": "String"
+    },
+    {
+      "name": "weakAgainstId",
+      "type": "String"
+    }
+  ]
+}

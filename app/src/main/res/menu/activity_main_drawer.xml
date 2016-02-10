@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/razas"
+            android:title="Razas" />
+        <item android:id="@+id/clases"
+            android:title="Clases" />
+        <item android:id="@+id/Mascotas"
+            android:title="Mascotas" />
+        <item android:id="@+id/Monturas"
+            android:title="Monturas" />
+        <item android:id="@+id/Logros"
+            android:title="Logros" />
+    </group>
+
+</menu>

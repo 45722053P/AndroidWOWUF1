@@ -1,0 +1,13 @@
+{
+  "syntaxVersion": 3,
+  "projectPackageId": "com.micompaia.wow",
+  "authority": "com.micompaia.wow.provider",
+  "providerJavaPackage": "com.micompaia.wow.provider",
+  "providerClassName": "WowProvider",
+  "sqliteOpenHelperClassName": "WowSQLiteOpenHelper",
+  "sqliteOpenHelperCallbacksClassName": "WowSQLiteOpenHelperCallbacks",
+  "databaseFileName": "Wow.db",
+  "databaseVersion": 1,
+  "enableForeignKeys": true,
+  "useAnnotations": true
+}
