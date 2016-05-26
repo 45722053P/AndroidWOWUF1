@@ -2,6 +2,7 @@ package com.micompaia.wow;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
@@ -110,12 +111,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.Mascotas) {
             i = new Intent(this,Mascotas.class);
             startActivity(i);
-
-
-        } else if (id == R.id.Monturas) {
-
-        } else if (id == R.id.Logros) {
-
+        } else if (id == R.id.facebook) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/Warcraft/")));
+        } else if (id == R.id.youtube) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/WorldofWarcraft")));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

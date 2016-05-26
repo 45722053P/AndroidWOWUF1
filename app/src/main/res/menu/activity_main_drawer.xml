@@ -8,10 +8,16 @@
             android:title="Clases" />
         <item android:id="@+id/Mascotas"
             android:title="Mascotas" />
-        <item android:id="@+id/Monturas"
-            android:title="Monturas" />
-        <item android:id="@+id/Logros"
-            android:title="Logros" />
+
+
     </group>
+    <item android:title="Redes sociales">
+        <menu>
+            <item android:id="@+id/facebook"
+                android:title="Facebook Oficial" />
+            <item android:id="@+id/youtube"
+                android:title="Youtube Oficial" />
+        </menu>
+    </item>
 
 </menu>
