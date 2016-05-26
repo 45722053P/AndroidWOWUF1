@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.Mascotas) {
+            i = new Intent(this,Mascotas.class);
+            startActivity(i);
 
 
         } else if (id == R.id.Monturas) {

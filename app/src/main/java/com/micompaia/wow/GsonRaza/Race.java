@@ -14,14 +14,8 @@ public class Race {
         private String side;
         private String name;
         private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-        private String image;
 
-        public String getImage(){
-            return  image;
-        }
-        public void setImage(String image){
-        this.image= image;
-    }
+
         /**
          *
          * @return

@@ -14,14 +14,6 @@ public class Class {
         private String powerType;
         private String name;
         private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-        private String image;
-
-    public String getImage(){
-        return  image;
-    }
-    public void setImage(String image){
-        this.image= image;
-    }
 
 
     /**

@@ -21,6 +21,7 @@ import java.util.ArrayList;
 
 public class AdaptadorRazas extends SimpleCursorAdapter {
     Context context;
+    ImageView imageView;
 
     public AdaptadorRazas(Context context, int razas_fila, ArrayList<Race> razasList, String[] from, int[] to, int flags) {
         super(context, razas_fila, (Cursor) razasList, from, to, flags);
@@ -41,19 +42,93 @@ public class AdaptadorRazas extends SimpleCursorAdapter {
             LayoutInflater inflater = LayoutInflater.from(context);
             convertView = inflater.inflate(R.layout.razas_fila, parent, false);
 
-            ImageView imageView = (ImageView) convertView.findViewById(R.id.imagenRaza);
+            imageView = (ImageView) convertView.findViewById(R.id.imagenRaza);
             TextView textView = (TextView) convertView.findViewById(R.id.nombreraza);
-
             textView.setText(razasCursor.getName());
-
-
-
-            Picasso.with(context)
-                    .load(razasCursor.getImagen())
-                    .fit()
-                    .into(imageView);
+            putimage(razasCursor.getName());
 
         }
             return convertView;
+    }
+
+    public void putimage(String name){
+        if (name.equals("Humano")){
+            Picasso.with(context)
+                    .load(R.drawable.humano)
+                    .fit()
+                    .into(imageView);
+        }
+        else if(name.equals("Orco")){
+            Picasso.with(context)
+                    .load(R.drawable.orco)
+                    .fit()
+                    .into(imageView);
+        } else if(name.equals("Enano")){
+            Picasso.with(context)
+                    .load(R.drawable.enano)
+                    .fit()
+                    .into(imageView);
+        } else if(name.equals("Elfo de la noche")){
+            Picasso.with(context)
+                    .load(R.drawable.elfodelanoche)
+                    .fit()
+                    .into(imageView);
+
+        } else if(name.equals("No-muerto")){
+            Picasso.with(context)
+                    .load(R.drawable.nomuerto)
+                    .fit()
+                    .into(imageView);
+        } else if(name.equals("Tauren")){
+            Picasso.with(context)
+                    .load(R.drawable.tauren)
+                    .fit()
+                    .into(imageView);
+        } else if(name.equals("Gnomo")){
+            Picasso.with(context)
+                    .load(R.drawable.gnomo)
+                    .fit()
+                    .into(imageView);
+        } else if(name.equals("Trol")){
+            Picasso.with(context)
+                    .load(R.drawable.trol)
+                    .fit()
+                    .into(imageView);
+        } else if(name.equals("Goblin")){
+            Picasso.with(context)
+                    .load(R.drawable.goblin)
+                    .fit()
+                    .into(imageView);
+        }else  if(name.equals("Elfo de sangre")){
+            Picasso.with(context)
+                    .load(R.drawable.elfodesangre)
+                    .fit()
+                    .into(imageView);
+
+        }else  if(name.equals("Draenei")){
+            Picasso.with(context)
+                    .load(R.drawable.draenei)
+                    .fit()
+                    .into(imageView);
+
+        } else if(name.equals("Huargen")){
+            Picasso.with(context)
+                    .load(R.drawable.huargen)
+                    .fit()
+                    .into(imageView);
+
+        }else  if(name.equals("Pandaren")){
+            Picasso.with(context)
+                    .load(R.drawable.pandaren)
+                    .fit()
+                    .into(imageView);
+
+        }else{
+            Picasso.with(context)
+                    .load(R.drawable.humano)
+                    .fit()
+                    .into(imageView);
+        }
+
     }
 }

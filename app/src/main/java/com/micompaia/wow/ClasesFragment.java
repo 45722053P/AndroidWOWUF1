@@ -15,7 +15,9 @@ import java.util.ArrayList;
  * A placeholder fragment containing a simple view.
  */
 public class ClasesFragment extends Fragment {
+
     AdaptadorClases adapter;
+
     public ClasesFragment() {
     }
 

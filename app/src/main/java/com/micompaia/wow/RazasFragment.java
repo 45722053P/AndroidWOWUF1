@@ -36,7 +36,6 @@ public class RazasFragment extends Fragment  implements android.support.v4.app.L
 
         razas = (GridView)fragmenrazas.findViewById(R.id.gridRazas);
 
-        //ArrayList<Race> razasList = new ArrayList<>();
 
         adapter=new AdaptadorRazas(getContext(),
                 R.layout.razas_fila,
@@ -85,29 +84,3 @@ public class RazasFragment extends Fragment  implements android.support.v4.app.L
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Parte de la llamada con el content provider
-
-        for (Race list : race.getRaces()) {
-                        RazasContentValues valoresrazas = new RazasContentValues();
-                        valoresrazas.putId(list.getId());
-                        valoresrazas.putMask(String.valueOf(list.getMask()));
-                        valoresrazas.putSide(list.getSide());
-                        valoresrazas.putName(list.getName());
-                        list.setImage(fotoRaza(list.getName()));
-                       context.getContentResolver().insert(RazasColumns.CONTENT_URI,valoresrazas.values());
-                    }
-                }
- */
